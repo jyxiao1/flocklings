@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="sketch.js"></script>
+    <title>Nephron for Flocklings</title>
+    <style>
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+    }
+    </style>
+</head>
+<body style="background-color: powderblue">
+<h1 style="text-align:center">Nephron for Flocklings</h1>
+
+<div id="nephron" style="text-align: center"></div>
+
+    <script type="text/javascript">
+        var svg = d3.select("#nephron")
+            .append("svg")
+            .attr("width", 0.70863309352517985611510791366906*800)
+            .attr("height", 800);
+
+
+        svg.append("svg:image")
+            .attr('width', 0.70863309352517985611510791366906*800)
+            .attr('height', 800)
+            .attr("xlink:href", "resources/nephron.jpg")
+
+
+    </script>
+</body>
+</html>
